@@ -1,0 +1,911 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primarycolor1: #8DB681;
+    --primarycolor2: #3E5E8F;
+    --secondarycolor1: #C6DBC0;
+    --secondarycolor2: #E0EBDD;
+    --secondarycolor3: #8b9ebc;
+    --secondarycolor4: #C5CFDD;
+    --Accentcolor1: #9B3DBC;
+    --Accentcolor2: #C38BD7;
+    --Accentcolor3: #E6CFEE;
+    --greycolor: #7A7A7A;
+    --whitecolor: #F5F5F5;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigatie */
+.navbar {
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+.navigatie {
+    margin-right: -50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--primarycolor2);
+    margin-right: 0.7rem;
+}
+    
+/* Sectie 1 Landingspagina */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(
+        rgba(255,255,255, 0.3),
+        rgba(255, 255, 255, 0.1)),
+        url(images/Zonsondergang-bij-zee_2.png)
+    center no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: var(--whitecolor);
+}
+
+.logo {
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    z-index: 2;
+    top: 1.5rem;
+    left: 1.5rem;
+    margin-left: 5rem;
+    padding-bottom: 5px;
+}
+
+.container-tekst {
+    width: 95rem;
+    height: 35rem;
+    background-color: rgba(62, 94, 143, 0.6);
+    padding-top: 4rem;
+    text-align: center;
+    animation: moveTekst 2s 0.7s forwards;
+}
+
+.section-1-heading {
+    font-family: 'Charm', sans-serif;
+    font-size: 8rem;
+    color: var(--primarycolor1);
+    margin-bottom: 4rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+    animation: moveTekst 2s 0.7s forwards;
+}
+
+.tekst {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: var(--secondarycolor2);
+    margin-bottom: 1.3rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555; 
+    animation: moveTekst 2s 0.7s forwards;
+}
+
+@keyframes moveTekst {
+    0% {
+        transform: translateY(40rem) rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* Tussensectie 1 */
+.tussen {
+    height: 40%;
+    background-color: var(--whitecolor);
+}
+
+.vulling {
+    height: 30rem;
+}
+
+/* Sectie 2 Waar kan energetische gezinstherapie bij helpen? */
+.section-2 {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tekst-waarvoor {
+        background-color: var(--secondarycolor1);
+        padding-top: 10rem;
+        padding-left: 10rem;
+}
+
+.section-heading {
+    font-family: 'Open sans', sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--primarycolor2);
+}
+
+.section-subheading {
+    font-family: 'charm', sans-serif;
+    font-size: 7rem;
+    color: var(--primarycolor2);
+    margin-bottom: 5rem;
+    margin-left: 12rem;
+}
+
+.tekst-section {
+    font-size: 2rem;
+    color: var(--greycolor);
+    max-width: 100rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.tekst-section-a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primarycolor2);
+    max-width: 100rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+.tekst-section-b {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Accentcolor2);
+    max-width: 100rem;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+.tekst-section-c {
+    font-family: 'charm', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primarycolor2);
+    max-width: 100rem;
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    margin-left: 3rem;
+}
+
+.img-waarvoor {
+    height: 110%;
+}
+
+/* Tussensectie 2 */
+.tussen {
+    height: 40%;
+    background-color: var(--whitecolor);
+}
+
+.tussen-tekst {
+    font-family: 'charm', sans-serif;
+    font-size: 6rem;
+    color: var(--Accentcolor2);
+    margin-top: 12rem;
+    margin-left: -60rem;
+}
+
+.img-ringpaars {
+    width: 30rem;
+    margin-left: -40rem;
+    
+}
+
+/* Sectie 3 Wat is NEI? */
+.section-3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--whitecolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tekst-wat {
+        background-color: var(--secondarycolor4);
+        padding-top: 10rem;
+        padding-left: 10rem;
+}
+
+.img-wat {
+    height: 110%;
+}
+
+/* Tussensectie 3 */
+.tussen {
+    height: 40%;
+    background-color: var(--whitecolor);
+}
+
+.tussen-tekst-2 {
+    font-family: 'charm', sans-serif;
+    font-size: 6rem;
+    color: var(--primarycolor2);
+    margin-top: 10rem;
+    margin-right: -65rem;
+}
+
+.img-ringblauw {
+    width: 30rem;
+    margin-top: 3rem;
+    margin-right: -40rem;
+}
+
+/* Sectie 4 Hoe gaat een sessie? */
+.section-4 {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tekst-hoe {
+        background-color: var(--secondarycolor1);
+        padding-top: 10rem;
+        padding-left: 10rem;
+}
+
+.img-hoe {
+    height: 110%;
+}
+
+/* Tussensectie 4 */
+.tussen {
+    height: 40%;
+    background-color: var(--whitecolor);
+}
+
+.tussen-tekst-3 {
+    font-family: 'charm', sans-serif;
+    font-size: 6rem;
+    color: var(--primarycolor1);
+    margin-top: 12rem;
+    margin-left: -60rem;
+}
+
+.img-ringgroen {
+    width: 30rem;
+    margin-top: 3rem;
+    margin-left: -50rem;
+}
+
+/* Sectie 5 Over mij */
+.section-5 {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tekst-overmij {
+        background-color: var(--Accentcolor3);
+        padding-top: 10rem;
+        padding-left: 10rem;
+}
+
+.img-wie {
+    height: 100%;
+}
+
+/* Tussensectie-4 */
+.tussen-a {
+    height: 90%;
+    background-color: whitesmoke;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100rem;
+    position: relative;
+    margin: auto;
+}
+
+.slider-image {
+    width: 70rem;
+    height: 40rem;
+}
+
+.tekst-containter {
+    width: 60rem;
+    height: 35rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-1 {
+    color: var(--whitecolor);
+    font-size: 3rem;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;  
+    text-align: center;
+    margin-left: -35rem;
+    margin-bottom: 17rem;
+}
+
+.quote-2 {
+    font-family: 'charm', sans-serif;
+    color: var(--whitecolor);
+    font-size: 3rem;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    text-align: center;
+    margin-left: -30rem;
+    margin-bottom: 12rem;
+}
+
+.text {
+  font-family: 'charm', sans-serif;
+  color: var(--whitecolor);
+  font-size: 5rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+.text-a {
+    font-family: 'charm', sans-serif;
+    color: var(--whitecolor);
+    font-size: 5rem;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5rem;
+  }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--secondarycolor3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.active {
+  background-color: var(--primarycolor2);
+}
+
+/* Sectie contact */
+.section-6 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondarycolor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.contact-header {
+    font-family: 'charm', sans-serif;
+    font-size: 7rem;
+    color: var(--primarycolor2);
+    margin-bottom: 5rem;
+}
+
+.logo_contact {
+    margin-left: -40rem;
+}
+
+.contact-heading {
+    width: 80rem;
+}
+
+.tekst-contact {
+    font-family: 'charm', sans-serif;
+    font-size: 3rem;
+    color: var(--primarycolor2);
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    width: 45rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem dashed #636363;
+    margin: 3rem 0;
+    padding: 1rem 1rem 1rem 0;
+    font-size: 1.6rem;
+    color: #4b4b4b;
+}
+
+.input-group input {
+    height: 4rem;
+}
+
+.input-group textarea {
+    max-height: 7rem;
+    max-width: 45rem;
+}
+
+.field:focus {
+    border-bottom-style: solid;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    font-size: 1.8rem;
+    color: var(--greycolor);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.input-label {
+    bottom: 3rem;
+}
+
+.field:focus ~ label {
+    transform: translateY(-3rem);
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    width: 25rem;
+    height: 5rem;
+    background-color: var(--primarycolor2);
+    color: var(--whitecolor);
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondarycolor3);
+    color: var(--whitecolor);
+    font-size: 2rem;
+}
+
+.contact-mediaquery {
+    color: var(--secondarycolor2);
+    visibility: hidden;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.contact-heading {
+    font-family: 'open sans', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--primarycolor1);
+}
+
+.person-img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.7rem solid var(--primarycolor2);
+    margin-right: -90rem;
+    margin-top: 7rem;
+}
+
+.contact-gegevens {
+    width: 150rem;
+    color: var(--Accentcolor1);
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.kvk {
+    margin-left: 50rem;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--primarycolor1);
+    position: relative;
+}
+
+.footer-content {
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+
+.copyright {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--whitecolor);
+    margin-left: -100rem;
+    margin-top: 10rem;
+ }
+
+.footer-btn {
+    width: 25rem;
+    height: 5rem;
+    margin-left: -30rem;
+    font-family: 'open sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--whitecolor);
+    background-color:var(--Accentcolor2);
+    border: 0.3rem solid var(--greycolor);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: var(--Accentcolor3);
+    color: var(--whitecolor);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.certificaat {
+    height: 15rem;
+    margin-left: 60rem;
+}
+
+.scroll-btn {
+    display: none;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #93c8d7;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    z-index: 99;
+    transition: filter 0.3s;
+}
+
+.scroll-btn i {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.scroll-btn:hover {
+    filter: brightness(85%);
+}
+
+.container-voorwaarden {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-heading {
+    font-family: 'Open sans', sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--primarycolor2);
+    margin-top: 10rem;
+}
+
+.section-subheading {
+    font-family: 'charm', sans-serif;
+    font-size: 7rem;
+    color: var(--primarycolor2);
+    margin-bottom: 5rem;
+    margin-left: 12rem;
+}
+
+.tekst-voorwaarden {
+    font-family: 'Open sans', sans-serif;
+    font-size: 2rem;
+    color: var(--greycolor);
+    max-width: 100rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-left: -50rem;
+}
+
+
+@media screen and (max-width: 1840px) {
+    .contact-wrapper {
+        width: 80%;
+        height: 65rem;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 14rem;
+        height: 18rem;
+    }
+
+    .section-1-heading {
+        font-size: 6rem;
+    }
+
+    .person-img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+
+    .contact-right {
+        padding: 3rem 5rem 5rem 5rem;
+    }
+    
+    .contact-heading {
+        font-size: 6rem;
+    }
+
+    .field {
+        width: 35rem;
+    }
+
+    .submit-btn {
+        margin-left: -10rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .footer-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+      }
+  
+    .logo {
+        width: 10rem;
+        height: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .section-1-heading {
+        font-size: 4.5rem;
+        padding-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .services {
+        height: auto;
+        flex-wrap: wrap;
+      }
+    
+    .service {
+        margin: 3rem 2rem;
+    }
+
+    .contact-gegevens {
+        font-size: 1.7rem;
+    }
+
+    .contact-right {
+        padding: 3rem 5rem 5rem 5rem;
+    }
+    
+    .contact-heading {
+        font-size: 4rem;
+    }
+
+    .field {
+        width: 25rem;
+    }
+
+    .submit-btn {
+        margin-left: -1rem;
+    }
+      
+    .footer-content {
+        width: 80%;
+    }
+
+    .copyright {
+        max-width: 20rem;
+        font-size: 1.5rem;
+    }    
+
+    .content-rosaerosa {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+      font-size: 47%;
+    }
+
+    .overlay {
+        width: 100vw;
+    }
+
+    nav li a {
+        top: 30%;
+        font-size: 4rem;
+    }
+
+    .menu-bars {
+        right: 4rem;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 25px;
+        height: 2px;
+        margin: 5px 0;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-7px, 8px);
+    }
+          
+    .change .bar3 {
+        transform: rotate(45deg) translate(-2px, -3px);
+    }
+
+    .section-2-heading {
+        font-size: 4.5rem;
+    }
+    
+    p {
+        padding-left: 3rem;
+    }
+
+    .progress-bar {
+        width: 35rem;
+    }
+
+    .service i {
+        font-size: 7rem;
+    }
+
+    .service h2 {
+        font-size: 2rem;
+        width: 15rem;
+    }
+
+    .contact-left {
+        width: 0;
+    }
+
+    .contact-gegevens {
+        display: none;
+    }
+
+    .contact-mediaquery {
+        visibility: visible;
+    }
+    
+    .contact-right {
+        width: 100%;
+    }
+
+    .copyright {
+        max-width: 18rem;
+        font-size: 1.3rem;
+    }    
+
+    .content-rosaerosa {
+        font-size: 1.3rem;
+        padding: 0.1rem;
+    }
+
+    .rosaerosa-btn {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.4rem;
+    }
+
+    .social-list i {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .scroll-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+    
+    .scroll-btn i {
+        font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+      }
+  }
+
+  .section-1-btn {
+    font-size: 1rem;
+}
+
+
+  @media screen and (max-width: 350px) {
+    html {
+        font-size: 37%;
+      }
+  }
